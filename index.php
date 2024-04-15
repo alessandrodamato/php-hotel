@@ -65,37 +65,28 @@ $hotels = [
 
         <div class="row">
 
-          <div class="col-3 offset-5">
+          <div class="col d-flex justify-content-end align-items-center">
 
-            <div class="w-100 h-100 d-flex justify-content-end align-items-center">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="parcheggio" <?php if ($parcheggio !== null) echo 'checked' ?>>
-                <label class="form-check-label" for="flexCheckDefault">
-                  Parcheggio incluso
-                </label>
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="parcheggio" <?php if ($parcheggio !== null) echo 'checked' ?>>
+              <label class="form-check-label" for="flexCheckDefault">
+                Parcheggio incluso
+              </label>
             </div>
             
-          </div>
-
-          <div class="col-3">
-
-              <select name="voto" id="voto" class="form-select">
-                <option value="" <?php if ($voto === null || $voto === '') echo 'selected'?> >Seleziona voto...</option>
-                <option value="1" <?php if ($voto == 1) echo 'selected'?> >Una stella o più</option>
-                <option value="2" <?php if ($voto == 2) echo 'selected'?> >Due stelle o più</option>
-                <option value="3" <?php if ($voto == 3) echo 'selected'?> >Tre stelle o più</option>
-                <option value="4" <?php if ($voto == 4) echo 'selected'?> >Quattro stelle o più</option>
-                <option value="5" <?php if ($voto == 5) echo 'selected'?> >Cinque stelle o più</option>
-              </select>
+            <select name="voto" id="voto" class="form-select w-25 ms-3">
+              <option value="" <?php if ($voto === null || $voto === '') echo 'selected'?> >Seleziona voto...</option>
+              <option value="1" <?php if ($voto == 1) echo 'selected'?> >Una stella o più</option>
+              <option value="2" <?php if ($voto == 2) echo 'selected'?> >Due stelle o più</option>
+              <option value="3" <?php if ($voto == 3) echo 'selected'?> >Tre stelle o più</option>
+              <option value="4" <?php if ($voto == 4) echo 'selected'?> >Quattro stelle o più</option>
+              <option value="5" <?php if ($voto == 5) echo 'selected'?> >Cinque stelle</option>
+            </select>
+  
+            <button class="btn btn-primary ms-3" type="submit">Cerca</button>
 
           </div>
 
-          <div class="col-1">
-
-              <button class="btn btn-primary" type="submit">Cerca</button>
-            
-          </div>
 
         </div>
 
@@ -116,7 +107,7 @@ $hotels = [
             <div class="col">
 
               <div class="card mb-5">
-                <img src="https://picsum.photos/id/<?php echo rand(50, 70) ?>/300" class="card-img-top" alt="<?php echo $hotel['name'] ?>" class="img-fluid">
+                <img src="https://picsum.photos/id/<?php echo rand(50, 80) ?>/300" class="card-img-top" alt="<?php echo $hotel['name'] ?>" class="img-fluid">
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $hotel['name'] ?></h5>
                   <p class="card-text"><?php echo $hotel['description'] ?></p>
