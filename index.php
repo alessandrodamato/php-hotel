@@ -54,7 +54,54 @@ $hotels = [
 
 <body>
 
-  <main class="mt-5">
+  <header class="my-5">
+
+    <form action="index.php" method="GET">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-3 offset-5">
+
+            <div class="w-100 h-100 d-flex justify-content-end align-items-center">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Parcheggio incluso
+                </label>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-3">
+
+              <select name="voto" id="voto" class="form-select">
+                <option value="1">Una stella o più</option>
+                <option value="2">Due stelle o più</option>
+                <option value="3">Tre stelle o più</option>
+                <option value="4">Quattro stelle o più</option>
+                <option value="5">Cinque stelle o più</option>
+              </select>
+
+          </div>
+
+          <div class="col-1">
+
+              <button class="btn btn-primary" type="submit">Cerca</button>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </header>
+
+  <main>
     
     <div class="container">
 
