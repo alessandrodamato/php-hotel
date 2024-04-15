@@ -52,7 +52,15 @@
 </head>
 <body>
 
-  
+  <?php foreach($hotels as $hotel): ?>
+  <ul>
+    <li><?php echo $hotel['name'] ?></li>
+    <li><?php echo $hotel['description'] ?></li>
+    <li><?php echo $hotel['parking'] ? 'SI' : 'NO' ?></li>
+    <li><?php echo $hotel['vote'] ?></li>
+    <li><?php echo $hotel['distance_to_center'] ?></li>
+  </ul>
+  <?php endforeach ?>
   
 </body>
 </html>
