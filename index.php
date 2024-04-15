@@ -52,12 +52,13 @@ $hotels = [
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>PHP Hotel</title>
 </head>
 
 <body>
 
-  <header class="my-5">
+  <header class="py-5">
 
     <form action="index.php" method="GET">
 
@@ -65,7 +66,11 @@ $hotels = [
 
         <div class="row">
 
-          <div class="col d-flex justify-content-end align-items-center">
+          <div class="col-4">
+            <h2>Boolking.com</h2>
+          </div>
+
+          <div class="col-8 d-flex justify-content-end align-items-center">
 
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="flexCheckDefault" name="parcheggio" <?php if ($parcheggio !== null) echo 'checked' ?>>
@@ -96,7 +101,7 @@ $hotels = [
 
   </header>
 
-  <main>
+  <main class="pt-5">
     
     <div class="container">
 
